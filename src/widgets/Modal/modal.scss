@@ -1,0 +1,36 @@
+.modal-main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  .backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .modal {
+    position: absolute;
+    width: 50%;
+    left: 25%;
+    top: 20%;
+    padding: 20px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    .modal-header {
+      min-height: 30px;
+    }
+    .modal-body {
+      flex: 1;
+    }
+    .modal-footer {
+      min-height: 30px;
+    }
+  }
+}
